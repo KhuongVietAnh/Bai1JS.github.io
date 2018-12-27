@@ -57,7 +57,7 @@ function checkExist(listOldIems, count, newinPut) {
 }
 //funtion create tag
 function CreateTag() {
-    var input = document.getElementById("input").value;
+    var input = document.getElementById("value_item").value;
     var list = document.getElementById("list-js");
     if (input.trim().length <= 0)
     {
@@ -81,8 +81,8 @@ function CreateTag() {
 //event when click button Add
 function clickAdd() {
     CreateTag();
-    document.getElementById('input').focus();
-    document.getElementById('input').value = '';
+    document.getElementById('value_item').focus();
+    document.getElementById('value_item').value = '';
     delLi++;
 }
 ;
